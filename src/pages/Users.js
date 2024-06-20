@@ -36,16 +36,20 @@ const Users = () => {
         navigate('/users/' + id);
     }
 
-    const deleteUser = (id) => {
-        axios.delete('https://reqres.in/api/users/' + id)
-            .then(response => {
-                alert('Deleted')
-                setCurrentPage(1);
-                getData(1)
-            })
-            .catch(error => {
-                console.error('Error fetching data:', error);
-            });
+    const deleteUser = (index) => {
+        let newData = [...data]
+        newData.splice(index, 1)
+        setData(newData)
+        alert('Deleted')
+        // axios.delete('https://reqres.in/api/users/' + id)
+        //     .then(response => {
+        //         alert('Deleted')
+        //         setCurrentPage(1);
+        //         getData(1)
+        //     })
+        //     .catch(error => {
+        //         console.error('Error fetching data:', error);
+        //     });
     }
 
     return (
@@ -61,13 +65,13 @@ const Users = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {data && data.map(item => (
+                    {data && data.map((item, index) => (
                         <tr key={item.id} >
                             <th scope="row">{item.id}</th>
                             <td>{item.first_name}</td>
                             <td>{item.last_name}</td>
                             <td>{item.email}</td>
-                            <td><button onClick={() => editUser(item.id)} type="button" className="btn btn-primary">Edit</button><button onClick={() => deleteUser(item.id)} type="button" style={{ marginLeft: "1rem" }} className="btn btn-primary">Delete</button></td>
+                            <td><button onClick={() => editUser(item.id)} type="button" className="btn btn-primary">Edit</button><button onClick={() => deleteUser(index)} type="button" style={{ marginLeft: "1rem" }} className="btn btn-primary">Delete</button></td>
                         </tr>
 
                     ))}

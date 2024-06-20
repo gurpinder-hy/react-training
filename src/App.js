@@ -25,6 +25,7 @@ import useContextSol from './pages/useContextSol';
 import useContextDemo from './pages/useContextDemo';
 import LifeCycleDemo from './pages/lifeCycleDemo';
 import ConditionalDemo from './pages/conditionalDemo';
+import NestedMap from './pages/nestedMap';
 
 function App() {
 
@@ -49,7 +50,7 @@ function App() {
                 <NavLink activeclassname='active' className="nav-link" to="/about" >About</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink activeclassname='active' className="nav-link" to="/contactUs" >Contactus</NavLink>
+                <NavLink activeclassname='active' className="nav-link" to="/nestedmap" >Nested MAP</NavLink>
               </li>
               <li className="nav-item dropdown">
                 <NavLink activeclassname='active' className="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false" to="/college" >College</NavLink>
@@ -99,7 +100,7 @@ function App() {
           <Route path="/users/:userId" element={<User />} />
           <Route path="/user" element={<User />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contactUs" element={<Contact />} />
+          <Route path="/nestedmap" element={<NestedMap />} />
           <Route path="/college" element={<College />}>
             <Route path="/college/teacher" element={<Teacher />} />
             <Route path="/college/student" element={<Student />} />
