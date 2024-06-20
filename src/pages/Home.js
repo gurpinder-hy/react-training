@@ -9,13 +9,13 @@ const Home = () => {
                 </div>
                 <div className="carousel-inner" style={{ height: '500px' }} >
                     <div className="carousel-item active">
-                        <img src="/landscape-1.avif" className="d-block w-100" alt="" />
+                        <img src="https://gurpinder-hy.github.io/react-training/landscape-1.avif" className="d-block w-100" alt="" />
                     </div>
                     <div className="carousel-item">
-                        <img src="/landscape-2.avif" className="d-block w-100" alt="" />
+                        <img src="https://gurpinder-hy.github.io/react-training/landscape-2.avif" className="d-block w-100" alt="" />
                     </div>
                     <div className="carousel-item">
-                        <img src="/landscape-1.avif" className="d-block w-100" alt="" />
+                        <img src="https://gurpinder-hy.github.io/react-training/landscape-1.avif" className="d-block w-100" alt="" />
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -32,7 +32,7 @@ const Home = () => {
                 <div className="row">
                     <div className="col-sm">
                         <div className="card">
-                            <img src="/sample.avif" className="card-img-top" alt="" />
+                            <img src="https://gurpinder-hy.github.io/react-training/sample.avif" className="card-img-top" alt="" />
                             <div className="card-body">
                                 <h5 className="card-title">Card title</h5>
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -41,7 +41,7 @@ const Home = () => {
                     </div>
                     <div className="col-sm">
                         <div className="card">
-                            <img src="/sample.avif" className="card-img-top" alt="" />
+                            <img src="https://gurpinder-hy.github.io/react-training/sample.avif" className="card-img-top" alt="" />
                             <div className="card-body">
                                 <h5 className="card-title">Card title</h5>
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -50,7 +50,7 @@ const Home = () => {
                     </div>
                     <div className="col-sm">
                         <div className="card">
-                            <img src="/sample.avif" className="card-img-top" alt="" />
+                            <img src="https://gurpinder-hy.github.io/react-training/sample.avif" className="card-img-top" alt="" />
                             <div className="card-body">
                                 <h5 className="card-title">Card title</h5>
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

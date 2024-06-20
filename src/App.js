@@ -31,7 +31,7 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/react-training'>
       {isLoggedIn && <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,8 +54,8 @@ function App() {
               <li className="nav-item dropdown">
                 <NavLink activeclassname='active' className="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false" to="/college" >College</NavLink>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <NavLink className="dropdown-item" activeclassname='active' to="/teacher" >Teacher</NavLink>
-                  <NavLink className="dropdown-item" activeclassname='active' to="/student" >Student</NavLink>
+                  <NavLink className="dropdown-item" activeclassname='active' to="/college/teacher" >Teacher</NavLink>
+                  <NavLink className="dropdown-item" activeclassname='active' to="/college/student" >Student</NavLink>
                 </ul>
               </li>
               <li className="nav-item">
@@ -94,24 +94,24 @@ function App() {
           <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
           <Route path="/" element={<Navigate replace to="/login" />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="home" element={<Home />} />
-          <Route path="users" element={<Users />} />
-          <Route path="users/:userId" element={<User />} />
-          <Route path="user" element={<User />} />
-          <Route path="about" element={<About />} />
-          <Route path="contactUs" element={<Contact />} />
-          <Route path="college" element={<College />}>
-            <Route path="teacher" element={<Teacher />} />
-            <Route path="student" element={<Student />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/users" element={<Users />} />
+          <Route path="/users/:userId" element={<User />} />
+          <Route path="/user" element={<User />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contactUs" element={<Contact />} />
+          <Route path="/college" element={<College />}>
+            <Route path="/college/teacher" element={<Teacher />} />
+            <Route path="/college/student" element={<Student />} />
           </Route>
-          <Route path="useEffectDemo" element={<UseEffectDemo />} />
-          <Route path="useContextDemo" element={<useContextDemo />} />
-          <Route path="lifeCycleDemo" element={<LifeCycleDemo />} />
-          <Route path="conditionalDemo" element={<ConditionalDemo />} />
-          <Route path="hookFormDemo" element={<ReactHookForm />} />
-          <Route path="useMemoDemo" element={<UseMemoDemo />} />
-          <Route path="unControlledComp" element={<UnControlledComp />} />
-          <Route path="counter" element={<Counter />} />
+          <Route path="/useEffectDemo" element={<UseEffectDemo />} />
+          <Route path="/useContextDemo" element={<useContextDemo />} />
+          <Route path="/lifeCycleDemo" element={<LifeCycleDemo />} />
+          <Route path="/conditionalDemo" element={<ConditionalDemo />} />
+          <Route path="/hookFormDemo" element={<ReactHookForm />} />
+          <Route path="/useMemoDemo" element={<UseMemoDemo />} />
+          <Route path="/unControlledComp" element={<UnControlledComp />} />
+          <Route path="/counter" element={<Counter />} />
         </Routes>
       </div>
     </BrowserRouter >
