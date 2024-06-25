@@ -1,6 +1,7 @@
 const Home = () => {
     return (
         <div className="homeContainer ps-4 pe-4">
+            <h2 className="mt-4 mb-4">Scrollable Home Page with Carousel and Cards</h2>
             <div className="ps-10 pe-10 carousel slide" style={{ height: '500px' }} data-bs-ride="carousel">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>

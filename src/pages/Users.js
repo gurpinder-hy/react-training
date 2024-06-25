@@ -54,7 +54,8 @@ const Users = () => {
 
     return (
         <div>
-            <table className="table">
+            <h2 style={{ marginLeft: '20px' }} className="mt-4 mb-4">Users List</h2>
+            <table style={{ marginLeft: '20px' }} className="table">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
@@ -77,11 +78,16 @@ const Users = () => {
                     ))}
                 </tbody>
             </table>
-            <PaginationComponent
-                currentPage={currentPage}
-                totalPages={totalPages}
-                onPageChange={handlePageChange}
-            />
+            <div
+                style={{ marginLeft: '20px' }}
+            >
+                <PaginationComponent
+                    currentPage={currentPage}
+                    totalPages={totalPages}
+                    onPageChange={handlePageChange}
+                />
+            </div>
+
         </div >
     );
 };

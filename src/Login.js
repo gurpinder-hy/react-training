@@ -20,6 +20,7 @@ const Login = (props) => {
     return (
         <div className="container">
             <form>
+                <h2 style={{ marginLeft: '20px' }} className="mt-4 mb-4">Login</h2>
                 <div className="form-row">
                     <div className="input-data">
                         <input

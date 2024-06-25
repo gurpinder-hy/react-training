@@ -60,6 +60,7 @@ const User = (props) => {
     return <>
         <div className="container">
             <form onSubmit={(e) => (onSubmit(e))}>
+                <h2 style={{ marginLeft: '20px' }} className="mt-4 mb-4">Update User</h2>
                 <div className="form-row">
                     <div className="input-data">
                         <input
