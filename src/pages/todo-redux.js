@@ -45,6 +45,7 @@ const TODORedux =
                                 className="todo"
                                 key={todo.id}
                                 style={{
+                                    cursor: 'pointer',
                                     textDecoration: todo.completed ?
                                         "line-through" : "none",
                                     color: todo.completed ?
