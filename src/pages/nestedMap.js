@@ -15,9 +15,9 @@ const NestedMap = () => {
                     <h4>Description: {recipe["Description"]}</h4>
                     <h4>Ingredients</h4>
                     <ul>
-                    {recipe["Ingredients"].map((item, index) => {
-                        return <li key={index}>{item}</li>
-                    })}
+                        {recipe["Ingredients"].map((item, index) => {
+                            return <li key={index}>{item}</li>
+                        })}
                     </ul>
                 </div>
             })}

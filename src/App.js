@@ -52,30 +52,23 @@ function App() {
               <li className="nav-item">
                 <NavLink activeclassname='active' className="nav-link" to="/nestedmap" >Nested MAP</NavLink>
               </li>
-              <li className="nav-item dropdown">
-                <NavLink activeclassname='active' className="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false" to="/college" >College</NavLink>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <NavLink className="dropdown-item" activeclassname='active' to="/college/teacher" >Teacher</NavLink>
-                  <NavLink className="dropdown-item" activeclassname='active' to="/college/student" >Student</NavLink>
-                </ul>
-              </li>
               <li className="nav-item">
                 <NavLink activeclassname='active' className="nav-link" to="/hookFormDemo" >React Hook Form</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink activeclassname='active' className="nav-link" to="/useEffectDemo" >Use Effect Component</NavLink>
+                <NavLink activeclassname='active' className="nav-link" to="/useEffectDemo" >Use Effect</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink activeclassname='active' className="nav-link" to="/useContextDemo" >Use Context Component</NavLink>
+                <NavLink activeclassname='active' className="nav-link" to="/useContextDemo" >Use Context</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink activeclassname='active' className="nav-link" to="/lifeCycleDemo" >Life Cycle Component</NavLink>
+                <NavLink activeclassname='active' className="nav-link" to="/lifeCycleDemo" >Life Cycle</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink activeclassname='active' className="nav-link" to="/conditionalDemo" >Conditional Component</NavLink>
+                <NavLink activeclassname='active' className="nav-link" to="/conditionalDemo" >Conditional</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink activeclassname='active' className="nav-link" to="/unControlledComp" >Un Controlled Component</NavLink>
+                <NavLink activeclassname='active' className="nav-link" to="/unControlledComp" >Un Controlled</NavLink>
               </li>
               <li className="nav-item">
                 <NavLink activeclassname='active' className="nav-link" to="/useMemoDemo" >Use Memo Demo</NavLink>
@@ -101,10 +94,6 @@ function App() {
           <Route path="/user" element={<User />} />
           <Route path="/about" element={<About />} />
           <Route path="/nestedmap" element={<NestedMap />} />
-          <Route path="/college" element={<College />}>
-            <Route path="/college/teacher" element={<Teacher />} />
-            <Route path="/college/student" element={<Student />} />
-          </Route>
           <Route path="/useEffectDemo" element={<UseEffectDemo />} />
           <Route path="/useContextDemo" element={<useContextDemo />} />
           <Route path="/lifeCycleDemo" element={<LifeCycleDemo />} />
