@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from "react";
 const UserContext = createContext();
 
 export default function UseContextSol() {
-  const [user, setUser] = useState("Jesse Hall");
+  const [user, setUser] = useState("test");
 
   return (
     <>

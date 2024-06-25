@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function UseContextDemo() {
-  const [user, setUser] = useState("Jesse Hall");
+  const [user, setUser] = useState("test");
 
   return (
     <>
