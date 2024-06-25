@@ -6,7 +6,7 @@ export default function ConditionalDemo() {
   return (
     <div>
       This is ConditionalDemo <br />
-      <button onClick={() => setShow(false)}>Change show</button>
+      <button onClick={() => setShow(!show)}>Change show</button>
       {show ? "Hello User" : ""}
     </div>
   );

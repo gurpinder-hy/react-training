@@ -21,16 +21,16 @@ const SPA = () => {
                     </div>
                 </div>
             </nav>
-            <h4 id="general" style={{paddingTop: 150}} className="mb-4">General</h4>
+            <h4 id="general" style={{ paddingTop: 150 }} className="mb-4">General</h4>
 
             <div className="" style={{ paddingTop: 10 }}>
                 <div className="row">
                     <div className="col-sm">
                         <div className="card">
-                            <img src="https://www.fool.com.au/wp-content/uploads/2022/02/etf-16-16.9-1200x675.jpg" className="card-img-top" alt="" />
+                            <img src="https://cdn.mos.cms.futurecdn.net/eeofNSWWiB4o6DRMj3KGQ6-1200-80.jpg" className="card-img-top" alt="" />
                             <div className="card-body">
-                                <h5 className="card-title">5 excellent ASX ETFs to grow your wealth</h5>
-                                <p className="card-text">If you're looking for an easy way to invest your hard-earned money, then exchange traded funds (ETFs) could be the way to do it.\r\nThat's because ETFs allow investors to avoid stock picking.</p>
+                                <h5 className="card-title">The surgeon general wants a warning label on social media for teens — but why stop there?</h5>
+                                <p className="card-text">Vivek Murthy wants the government to stub out social media use by kids. In a New York Times op-ed, the surgeon general this week details the growing body of evidence linking TikTok, Instagram, and oters.</p>
                             </div>
                         </div>
                     </div>
@@ -45,17 +45,17 @@ const SPA = () => {
                     </div>
                     <div className="col-sm">
                         <div className="card">
-                            <img src="https://cdn.mos.cms.futurecdn.net/eeofNSWWiB4o6DRMj3KGQ6-1200-80.jpg" className="card-img-top" alt="" />
+                            <img src="https://www.fool.com.au/wp-content/uploads/2022/02/etf-16-16.9-1200x675.jpg" className="card-img-top" alt="" />
                             <div className="card-body">
-                                <h5 className="card-title">The surgeon general wants a warning label on social media for teens — but why stop there?</h5>
-                                <p className="card-text">Vivek Murthy wants the government to stub out social media use by kids. In a New York Times op-ed, the surgeon general this week details the growing body of evidence linking TikTok, Instagram, and oters.</p>
+                                <h5 className="card-title">5 excellent ASX ETFs to grow your wealth</h5>
+                                <p className="card-text">If you're looking for an easy way to invest your hard-earned money, then exchange traded funds (ETFs) could be the way to do it.\r\nThat's because ETFs allow investors to avoid stock picking.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <h4 id="business" style={{paddingTop: 150}}  className="mt-4 mb-4">Business</h4>
+            <h4 id="business" style={{ paddingTop: 150 }} className="mt-4 mb-4">Business</h4>
 
             <div className="" style={{ paddingTop: 10 }}>
                 <div className="row">
@@ -89,7 +89,7 @@ const SPA = () => {
                 </div>
             </div>
 
-            <h4 id="apple" style={{paddingTop: 150}}  className="mt-4 mb-4">Apple</h4>
+            <h4 id="apple" style={{ paddingTop: 150 }} className="mt-4 mb-4">Apple</h4>
 
             <div className="" style={{ paddingTop: 10 }}>
                 <div className="row">
